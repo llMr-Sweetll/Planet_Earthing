@@ -88,7 +88,6 @@ Sap-flow methods are established in plant ecophysiology, especially for woody st
 Key sources:
 
 - [Lu, Urban, Zhao 2004 record](https://hero.epa.gov/reference/5794015/)
-- [Dynamax TDP overview](https://dynamax.com/products/transpiration-sap-flow/tdp-sap-velocity-thermal-dissipation-probe)
 - [USFS caveat on thermal-dissipation consistency](https://research.fs.usda.gov/treesearch/36210)
 
 Design use:
@@ -120,4 +119,3 @@ Key sources:
 - [Plants Neither Possess nor Require Consciousness](https://www.cell.com/trends/plant-science/fulltext/S1360-1385%2819%2930126-8)
 - [Debunking a myth: plant consciousness](https://pmc.ncbi.nlm.nih.gov/articles/PMC8052213/)
 - [A critical review of plant sentience](https://link.springer.com/article/10.1007/s10539-024-09953-1)
-
