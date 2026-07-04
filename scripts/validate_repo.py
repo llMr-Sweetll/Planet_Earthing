@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REQUIRED_README_SECTIONS = [
     "## Abstract",
     "## Research Status",
+    "## Immediate Execution Decisions",
     "## Problem Statement",
     "## Literature Basis",
     "## Research Gap",
@@ -26,6 +27,19 @@ REQUIRED_WORKFLOWS = [
     ".github/workflows/ci.yml",
     ".github/workflows/link-check.yml",
     ".github/workflows/protocol-packet.yml",
+]
+
+REQUIRED_PROJECT_FILES = [
+    "docs/specs/species-selection.md",
+    "docs/protocols/phase-0-instrumentation-validation.md",
+    "docs/specs/calibration-report-template.md",
+    "docs/protocols/consent-and-privacy-packet.md",
+    "docs/protocols/randomization-plan.md",
+    "docs/protocols/pilot-readiness-checklist.md",
+    "experiments/pet-the-plant/randomization_schedule_example.csv",
+    "data/examples/synthetic_pet_the_plant/README.md",
+    "data/examples/synthetic_pet_the_plant/sessions.csv",
+    "data/examples/synthetic_pet_the_plant/feature_table.csv",
 ]
 
 ALLOWED_EVIDENCE_STATUSES = {
@@ -67,7 +81,7 @@ def validate_readme() -> None:
     for section in REQUIRED_README_SECTIONS:
         if section not in readme:
             fail(f"README.md is missing section: {section}")
-    for citation in ["[1]", "[2]", "[3]", "[4]", "[5]", "[6]", "[7]", "[8]"]:
+    for citation in ["[1]", "[2]", "[3]", "[4]", "[5]", "[6]", "[7]", "[8]", "[9]"]:
         if citation not in readme:
             fail(f"README.md does not cite required reference marker: {citation}")
     required_phrases = [
@@ -151,6 +165,12 @@ def validate_workflows() -> None:
             fail(f"missing workflow: {workflow}")
 
 
+def validate_project_files() -> None:
+    for required_file in REQUIRED_PROJECT_FILES:
+        if not (ROOT / required_file).exists():
+            fail(f"missing required project artifact: {required_file}")
+
+
 def validate_claim_language() -> None:
     checked_paths = [
         path
@@ -185,6 +205,7 @@ def main() -> int:
     validate_json_templates()
     validate_cli_metadata()
     validate_workflows()
+    validate_project_files()
     validate_claim_language()
     validate_ascii()
     print("repository validation passed")

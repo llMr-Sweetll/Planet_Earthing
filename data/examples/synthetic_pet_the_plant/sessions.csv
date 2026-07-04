@@ -1,0 +1,5 @@
+session_id,cohort_id,plant_id,condition_code,blind_label,scheduled_start_iso,actual_start_iso,operator_id,participant_id,protocol_version,randomization_block,quality_flag,notes
+SYN001,SYN-C01,SYN-P001,HOST_TOUCH_VOICE,SYN-B001,2026-08-01T09:00:00+05:30,2026-08-01T09:00:00+05:30,SYN-OP001,SYN-H001,0.1.0,SYN-W01,PASS,Synthetic demo data; not empirical.
+SYN002,SYN-C01,SYN-P001,NOVEL_STRANGER_TOUCH_VOICE,SYN-B002,2026-08-02T09:00:00+05:30,2026-08-02T09:00:00+05:30,SYN-OP001,SYN-H002,0.1.0,SYN-W01,PASS,Synthetic demo data; not empirical.
+SYN003,SYN-C01,SYN-P001,OBJECT_TOUCH,SYN-B003,2026-08-03T09:00:00+05:30,2026-08-03T09:00:00+05:30,SYN-OP001,NONE,0.1.0,SYN-W01,PASS,Synthetic demo data; not empirical.
+SYN004,SYN-C01,SYN-P001,NO_TOUCH_BASELINE,SYN-B004,2026-08-04T09:00:00+05:30,2026-08-04T09:00:00+05:30,SYN-OP001,NONE,0.1.0,SYN-W01,PASS,Synthetic demo data; not empirical.

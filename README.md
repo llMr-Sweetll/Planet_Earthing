@@ -21,6 +21,18 @@ This repository currently contains protocol design, literature synthesis, data s
 
 Empirical Planet_Earthing sessions collected: **0**. The current repository is a protocol and research-design package, not evidence of an observed host-versus-stranger effect.
 
+## Immediate Execution Decisions
+
+| Decision | Current choice |
+|---|---|
+| Phase 0 species | `Solanum lycopersicum cv. Micro-Tom` |
+| First real run | Instrumentation validation only |
+| First biological study | Pilot cohort after Phase 0 passes |
+| Minimum required channels | electrical, pressure/touch, microclimate, video, event markers |
+| Current executable demo | synthetic schedule, synthetic sensor data, feature-table dry run |
+
+Micro-Tom is selected because it is a compact tomato cultivar with existing genetic and physiological characterization [9], and tomato is already represented in relevant plant-stress sound literature [5]. This is a practical model-system decision, not evidence for person discrimination.
+
 ## Problem Statement
 
 Plants are known to produce measurable physiological responses to mechanical stimulation, wounding, water stress, volatile cues, and other environmental changes [1-6]. Those observations justify measuring plant electrical, mechanical, chemical, and microenvironmental signals during a standardized human interaction.
@@ -164,12 +176,18 @@ Success criteria are intentionally strict:
 | [docs/research/evidence-summary.md](docs/research/evidence-summary.md) | Plain-language evidence summary |
 | [docs/research/fact-check.md](docs/research/fact-check.md) | Claim-by-claim fact check |
 | [docs/research/literature-map.md](docs/research/literature-map.md) | Topic-organized literature notes |
+| [docs/specs/species-selection.md](docs/specs/species-selection.md) | Selected species and rationale |
 | [docs/protocols/preregistration.md](docs/protocols/preregistration.md) | Preregistration draft |
 | [docs/protocols/experimental-protocol.md](docs/protocols/experimental-protocol.md) | Session protocol |
+| [docs/protocols/phase-0-instrumentation-validation.md](docs/protocols/phase-0-instrumentation-validation.md) | Phase 0 hardware validation plan |
+| [docs/protocols/consent-and-privacy-packet.md](docs/protocols/consent-and-privacy-packet.md) | Draft human-participant privacy packet |
+| [docs/protocols/randomization-plan.md](docs/protocols/randomization-plan.md) | Randomization and blinding plan |
 | [docs/protocols/statistical-analysis-plan.md](docs/protocols/statistical-analysis-plan.md) | Statistical and ML analysis rules |
 | [docs/protocols/sensor-suite.md](docs/protocols/sensor-suite.md) | Sensor requirements and caveats |
 | [docs/specs/data-dictionary.md](docs/specs/data-dictionary.md) | Session metadata and data schema |
+| [docs/specs/calibration-report-template.md](docs/specs/calibration-report-template.md) | Calibration report template |
 | [experiments/pet-the-plant](experiments/pet-the-plant) | Experiment-specific templates |
+| [data/examples/synthetic_pet_the_plant](data/examples/synthetic_pet_the_plant) | Synthetic dry-run dataset |
 | [src/planetearthing](src/planetearthing) | Lightweight validation and feature-summary helpers |
 
 ## How To Use This Repo
@@ -208,3 +226,5 @@ Repository code, protocols, and documentation are released under the [MIT Licens
 [7] Horowitz, K. A., Lewis, D. C., and Gasteiger, E. L. "Plant Primary Perception: Electrophysiological Unresponsiveness to Brine Shrimp Killing." *Science* 189(4201): 478-480 (1975). DOI: [10.1126/science.189.4201.478](https://doi.org/10.1126/science.189.4201.478).
 
 [8] Taiz, L. et al. "Plants Neither Possess nor Require Consciousness." *Trends in Plant Science* 24(8): 677-687 (2019). DOI: [10.1016/j.tplants.2019.05.008](https://doi.org/10.1016/j.tplants.2019.05.008).
+
+[9] Marti, E., Gisbert, C., Bishop, G. J., Dixon, M. S., and Garcia-Martinez, J. L. "Genetic and physiological characterization of tomato cv. Micro-Tom." *Journal of Experimental Botany* 57(9): 2037-2047 (2006). DOI: [10.1093/jxb/erj154](https://doi.org/10.1093/jxb/erj154).

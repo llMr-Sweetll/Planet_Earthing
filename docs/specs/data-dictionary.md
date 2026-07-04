@@ -90,3 +90,15 @@ One row per session-feature:
 | `normalization` | string | e.g. `baseline_corrected` |
 | `quality_flag` | string | Feature-level quality |
 
+## Randomization Schedule CSV
+
+| Column | Type | Notes |
+|---|---|---|
+| `session_id` | string | Planned session ID |
+| `cohort_id` | string | Cohort ID |
+| `plant_id` | string | Plant ID |
+| `date_block` | string | Week or block label |
+| `scheduled_start_iso` | datetime | Planned start time |
+| `condition_code` | enum | Condition before blinding |
+| `blind_label` | string | Label used for blinded analysis |
+| `randomization_block` | string | Plant/week block |

@@ -15,6 +15,7 @@ Can familiar-host sessions be distinguished from novel-stranger sessions using p
 - [problem-statement.md](problem-statement.md)
 - [session_template.json](session_template.json)
 - [analysis_config.json](analysis_config.json)
+- [randomization_schedule_example.csv](randomization_schedule_example.csv)
 
 ## Required Before Data Collection
 
@@ -25,3 +26,18 @@ Can familiar-host sessions be distinguished from novel-stranger sessions using p
 - [ ] Randomization plan generated.
 - [ ] Preregistration frozen.
 - [ ] Analysis code smoke-tested on dummy data.
+
+## Synthetic Dry Run
+
+Synthetic example data live in:
+
+```text
+data/examples/synthetic_pet_the_plant/
+```
+
+Regenerate them with:
+
+```bash
+PYTHONPATH=src python3 scripts/generate_synthetic_dataset.py
+PYTHONPATH=src python3 scripts/build_feature_table.py
+```

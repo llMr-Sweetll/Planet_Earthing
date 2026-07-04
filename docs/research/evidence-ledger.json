@@ -135,7 +135,20 @@
       "supports": "Calling the familiar-human question untested in this project.",
       "does_not_support": "Any public claim that the project has observed an effect.",
       "design_implication": "README and docs must distinguish external literature from future project data."
+    },
+    {
+      "id": "E010",
+      "claim": "Micro-Tom tomato is a compact tomato cultivar suitable for controlled model-plant research planning.",
+      "status": "supported-with-limitations",
+      "evidence_type": "cultivar characterization study",
+      "source_type": "peer-reviewed empirical study",
+      "species_or_system": "Solanum lycopersicum cv. Micro-Tom",
+      "source": "Genetic and physiological characterization of tomato cv. Micro-Tom",
+      "url": "https://academic.oup.com/jxb/article/57/9/2037/622929",
+      "doi": "10.1093/jxb/erj154",
+      "supports": "Selecting Micro-Tom as a practical model cultivar for Phase 0 planning.",
+      "does_not_support": "That Micro-Tom is uniquely capable of host-versus-stranger discrimination.",
+      "design_implication": "Use Micro-Tom for practical pilot planning while treating biological claims as untested."
     }
   ]
 }
-

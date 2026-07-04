@@ -11,18 +11,20 @@
 - [x] Capture fact-check and evidence posture.
 - [x] Draft preregistration, protocol, data plan, and analysis plan.
 - [x] Add lightweight feature-extraction scaffold.
-- [ ] Choose primary species and cultivar.
-- [ ] Decide whether the first run is a single-plant instrumentation demo or a small pilot cohort.
-- [ ] Add synthetic example data for contributor testing.
-- [ ] Add synthetic-data analysis examples for contributors.
+- [x] Choose primary species and cultivar.
+- [x] Decide whether the first run is a single-plant instrumentation demo or a small pilot cohort.
+- [x] Add synthetic example data for contributor testing.
+- [x] Add synthetic-data analysis examples for contributors.
+- [x] Add randomization schedule generator and example schedule.
+- [x] Add consent/privacy draft packet.
 
 ## Phase 1: Instrumentation Validation
 
 - [ ] Assemble electrical, vibration, microclimate, pressure, audio/video, and timing stack.
 - [ ] Record no-touch baseline, object-touch, robot-touch, and human-touch positive controls.
 - [ ] Quantify sensor noise, drift, motion artifacts, and electrode stability over 7 days.
-- [ ] Freeze session metadata schema before collecting human-condition data.
-- [ ] Publish a calibration report template.
+- [x] Freeze draft session metadata schema before collecting human-condition data.
+- [x] Publish a calibration report template.
 
 ## Phase 2: Pilot Cohort
 

@@ -89,6 +89,19 @@ The repository evaluation script checks README structure, evidence-ledger shape,
 5. Add calibration and failure rules.
 6. Update analysis plans only if the sensor becomes part of a predefined outcome.
 
+## 8.1. How To Generate A Randomization Schedule
+
+```bash
+PYTHONPATH=src python3 -m planetearthing.cli generate-schedule \
+  --plants P001,P002,P003,P004,P005,P006 \
+  --start-date 2026-08-01 \
+  --weeks 4 \
+  --seed 20260704 \
+  --output experiments/pet-the-plant/randomization_schedule_example.csv
+```
+
+The committed schedule is an example only. Generate a fresh seed before real data collection.
+
 ## 9. How To Change The Protocol
 
 1. Open a research task issue.

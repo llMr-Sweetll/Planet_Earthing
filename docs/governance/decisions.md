@@ -14,6 +14,34 @@ Status:
 
 Accepted.
 
+## 2026-07-04: Select Micro-Tom Tomato For Phase 0 Planning
+
+Decision:
+
+Use `Solanum lycopersicum cv. Micro-Tom` as the selected species/cultivar for Phase 0 and pilot planning.
+
+Rationale:
+
+Micro-Tom is compact, short-cycle, and established as a tomato model system. Tomato is also represented in relevant plant bioacoustics and physiology literature. The choice supports practical replicated indoor instrumentation without claiming human-recognition ability.
+
+Status:
+
+Accepted.
+
+## 2026-07-04: Phase 0 Must Be Instrumentation-Only
+
+Decision:
+
+The first run is a Phase 0 instrumentation demo, not a biological test.
+
+Rationale:
+
+Before host-versus-stranger conditions are meaningful, the project must validate electrodes, touch pressure, microclimate logging, event timing, metadata, baseline drift, and feature extraction.
+
+Status:
+
+Accepted.
+
 ## 2026-07-04: Publish As Public Open-Source Repo
 
 Decision:
