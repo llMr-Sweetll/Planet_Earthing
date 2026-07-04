@@ -5,13 +5,16 @@
 - [x] Initialize living repo.
 - [x] Convert repository to open source under MIT.
 - [x] Add public contribution, conduct, support, and working guides.
+- [x] Replace vague README claims with explicit project status, evidence table, controls, and non-claims.
+- [x] Add evidence ledger and evidence summary.
+- [x] Add CI matrix, repository evaluator, link-check workflow, protocol packet workflow, and Dependabot.
 - [x] Capture fact-check and evidence posture.
 - [x] Draft preregistration, protocol, data plan, and analysis plan.
 - [x] Add lightweight feature-extraction scaffold.
 - [ ] Choose primary species and cultivar.
 - [ ] Decide whether the first run is a single-plant instrumentation demo or a small pilot cohort.
 - [ ] Add synthetic example data for contributor testing.
-- [ ] Add CI for tests and JSON validation.
+- [ ] Add synthetic-data analysis examples for contributors.
 
 ## Phase 1: Instrumentation Validation
 
@@ -48,3 +51,4 @@
 - [ ] Add a public project board once GitHub repository is live.
 - [ ] Define maintainer review expectations.
 - [ ] Create release tags for protocol freezes.
+- [ ] Add branch protection requiring CI after workflow names stabilize.

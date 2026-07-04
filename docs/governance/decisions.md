@@ -28,6 +28,38 @@ Status:
 
 Accepted.
 
+## 2026-07-04: Require Evidence Ledger For Scientific Claims
+
+Decision:
+
+Use `docs/research/evidence-ledger.json` as the source-of-truth matrix for claim status, source type, empirical support, limitations, and design implications.
+
+Rationale:
+
+The README and research docs must not rely on vague statements. A machine-readable evidence ledger lets CI verify that public claims have explicit source boundaries and that the project states when it has no data yet.
+
+Status:
+
+Accepted.
+
+## 2026-07-04: Split Validation Into CI, Link Check, And Protocol Packet Workflows
+
+Decision:
+
+Replace the single `Validate` workflow with:
+
+- `CI` for Python matrix tests and repository evaluation,
+- `Link Check` for scheduled/manual/PR documentation link checks,
+- `Protocol Packet` for freeze-tag research artifacts.
+
+Rationale:
+
+The project needs both code validation and research-documentation evaluation. Protocol snapshots should be reproducible when preregistration, pilot, or analysis freezes are tagged.
+
+Status:
+
+Accepted.
+
 ## 2026-07-04: Treat Familiar-Human Recognition As Exploratory
 
 Decision:

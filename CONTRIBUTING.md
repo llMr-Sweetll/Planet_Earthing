@@ -26,6 +26,7 @@ Planet_Earthing welcomes careful skepticism. Contributions should make the exper
 git clone https://github.com/llMr-Sweetll/Planet_Earthing.git
 cd Planet_Earthing
 PYTHONPATH=src python3 -m unittest discover -s tests
+PYTHONPATH=src python3 scripts/validate_repo.py
 PYTHONPATH=src python3 -m planetearthing.cli --help
 ```
 
@@ -44,10 +45,7 @@ Suggested commands:
 
 ```bash
 PYTHONPATH=src python3 -m unittest discover -s tests
-python3 -m json.tool experiments/pet-the-plant/session_template.json >/dev/null
-python3 -m json.tool experiments/pet-the-plant/analysis_config.json >/dev/null
-PYTHONPATH=src python3 -m planetearthing.cli validate-metadata experiments/pet-the-plant/session_template.json
-rg -nP "[^\\x00-\\x7F]" .
+PYTHONPATH=src python3 scripts/validate_repo.py
 ```
 
 ## Evidence Standard
@@ -55,9 +53,10 @@ rg -nP "[^\\x00-\\x7F]" .
 When adding a claim, include:
 
 - What the claim says.
-- Whether it is supported, plausible but unproven, exploratory, or unsupported.
+- Whether it is supported, supported with limitations, exploratory, unsupported, or not yet backed by project data.
 - The best source you found.
 - The biggest limitation or alternative explanation.
+- The evidence-ledger ID, such as `E002`.
 
 ## Design Standard
 
@@ -75,7 +74,8 @@ Do not commit raw participant media, full names, consent forms, or raw sensor st
 ## Pull Request Checklist
 
 - [ ] The change has a clear reason.
-- [ ] The claim label is correct: supported, plausible but unproven, exploratory, unsupported, or superseded.
+- [ ] The claim label is correct: supported, supported with limitations, exploratory, unsupported, or no project data yet.
+- [ ] The evidence ledger is updated for research claims.
 - [ ] Sources are linked for evidence changes.
 - [ ] Protocol or schema version impact is noted.
 - [ ] Privacy-sensitive data are not included.

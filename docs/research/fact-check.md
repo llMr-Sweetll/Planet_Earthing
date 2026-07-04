@@ -4,11 +4,15 @@ Last updated: 2026-07-04
 
 This document separates what plant science already supports from what the Pet the Plant study would need to demonstrate.
 
+For the machine-readable source matrix used by CI, see [evidence-ledger.json](evidence-ledger.json). For a shorter prose summary, see [evidence-summary.md](evidence-summary.md).
+
 ## Bottom Line
 
 Plants have rich, measurable signaling systems. They can respond to touch, wounding, humidity, light, sound vibration, chemical cues, and other stressors through electrical, calcium, hydraulic, hormonal, mechanical, volatile, and gene-expression pathways.
 
 That does **not** mean the plant recognizes a familiar person, reads intention, or experiences emotion. The familiar-human question is currently best treated as exploratory and falsifiable.
+
+Planet_Earthing has collected no plant-session data yet. Any claim about host-versus-stranger differences must be read as a planned test, not an observed result.
 
 ## Claim Table
 
@@ -45,4 +49,3 @@ The original draft is a useful spark, but the confirmatory version should change
 - Add a human-nearby/no-touch control to separate touch from heat, CO2, VOCs, sound, and electromagnetic artifacts.
 - Treat sap-flow probes as optional because they can wound small plants and may have insufficient time resolution for a 60 second interaction.
 - Add ethics/consent language for human audio/video, pressure glove data, and potential human VOC traces.
-

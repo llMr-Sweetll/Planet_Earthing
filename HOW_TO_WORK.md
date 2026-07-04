@@ -16,6 +16,7 @@ The repo should make that question easier to answer, including if the answer is 
 git clone https://github.com/llMr-Sweetll/Planet_Earthing.git
 cd Planet_Earthing
 PYTHONPATH=src python3 -m unittest discover -s tests
+PYTHONPATH=src python3 scripts/validate_repo.py
 PYTHONPATH=src python3 -m planetearthing.cli --help
 ```
 
@@ -65,21 +66,19 @@ Run these before committing:
 
 ```bash
 PYTHONPATH=src python3 -m unittest discover -s tests
-python3 -m json.tool experiments/pet-the-plant/session_template.json >/dev/null
-python3 -m json.tool experiments/pet-the-plant/analysis_config.json >/dev/null
-PYTHONPATH=src python3 -m planetearthing.cli validate-metadata experiments/pet-the-plant/session_template.json
-rg -nP "[^\\x00-\\x7F]" .
+PYTHONPATH=src python3 scripts/validate_repo.py
 ```
 
-The ASCII scan keeps files portable. Use non-ASCII only when there is a clear reason.
+The repository evaluation script checks README structure, evidence-ledger shape, JSON templates, metadata validity, workflow presence, claim-language guardrails, and ASCII portability.
 
 ## 7. How To Add A Source
 
 1. Prefer peer-reviewed sources, official datasets, or primary technical documentation.
-2. Add the source to the relevant research doc.
-3. Add a BibTeX entry to `docs/research/source-register.bib` when appropriate.
-4. State the limitation or alternative explanation.
-5. Update the claim label if the source changes the evidence posture.
+2. Add or update an entry in `docs/research/evidence-ledger.json`.
+3. State what the source supports and what it does not support.
+4. Add the source to the relevant research doc.
+5. Add a BibTeX entry to `docs/research/source-register.bib` when appropriate.
+6. Update the claim label if the source changes the evidence posture.
 
 ## 8. How To Add A Sensor
 
@@ -123,7 +122,6 @@ A good pull request says:
 
 - what changed,
 - why it matters,
-- what evidence supports it,
+- what evidence ID supports it,
 - what validation was run,
 - what remains uncertain.
-

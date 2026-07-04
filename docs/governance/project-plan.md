@@ -28,8 +28,11 @@ Done when:
 
 - repository is public,
 - MIT license is present,
-- README and contributing docs are usable,
-- tests pass,
+- README states project status, current evidence, non-claims, and reproduction commands,
+- contributing docs require evidence-ledger updates for scientific claims,
+- CI passes across supported Python versions,
+- link checking is available,
+- protocol packet release workflow is available,
 - issue templates exist,
 - roadmap and project plan exist.
 
@@ -100,7 +103,8 @@ Small edits:
 Scientific claims:
 
 - Open an evidence claim issue.
-- Add sources and limitations.
+- Add or update an evidence-ledger entry with source, status, supports, and does-not-support fields.
+- Add sources and limitations in prose docs.
 - Update claim label if needed.
 
 Protocol changes:
@@ -133,5 +137,4 @@ Use this phrase until stronger evidence exists:
 
 Do not use:
 
-> We proved plants recognize people.
-
+> This project has demonstrated plant recognition of people.
