@@ -9,12 +9,17 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 REQUIRED_README_SECTIONS = [
-    "## Current Project Status",
-    "## Current Evidence",
-    "## What Pet The Plant Tests",
-    "## CI/CD And Evaluation",
-    "## How To Reproduce The Current Repo State",
-    "## What This Project Does Not Claim",
+    "## Abstract",
+    "## Research Status",
+    "## Problem Statement",
+    "## Literature Basis",
+    "## Research Gap",
+    "## Hypotheses",
+    "## Experimental Design",
+    "## Measurement Plan",
+    "## Analysis Plan",
+    "## Ethics And Data Handling",
+    "## References",
 ]
 
 REQUIRED_WORKFLOWS = [
@@ -62,9 +67,17 @@ def validate_readme() -> None:
     for section in REQUIRED_README_SECTIONS:
         if section not in readme:
             fail(f"README.md is missing section: {section}")
-    for evidence_id in ["E001", "E002", "E005", "E007", "E009"]:
-        if evidence_id not in readme:
-            fail(f"README.md does not cite required evidence id: {evidence_id}")
+    for citation in ["[1]", "[2]", "[3]", "[4]", "[5]", "[6]", "[7]", "[8]"]:
+        if citation not in readme:
+            fail(f"README.md does not cite required reference marker: {citation}")
+    required_phrases = [
+        "Empirical Planet_Earthing sessions collected: **0**",
+        "It does **not** yet contain experimental results.",
+        "The literature does **not** establish that a plant can distinguish a familiar human from a stranger",
+    ]
+    for phrase in required_phrases:
+        if phrase not in readme:
+            fail(f"README.md is missing required research-status phrase: {phrase}")
 
 
 def validate_evidence_ledger() -> None:
