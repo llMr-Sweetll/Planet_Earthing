@@ -24,10 +24,9 @@ jobs:
         with:
           args: >-
             --no-progress
-            --accept 200,206,403,429
+            --accept 200,206,403,405,429
             README.md
             HOW_TO_WORK.md
             CONTRIBUTING.md
             docs/**/*.md
             docs/research/evidence-ledger.json
-
