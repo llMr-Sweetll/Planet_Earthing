@@ -53,4 +53,4 @@
 - [ ] Add a public project board once GitHub repository is live.
 - [ ] Define maintainer review expectations.
 - [ ] Create release tags for protocol freezes.
-- [ ] Add branch protection requiring CI after workflow names stabilize.
+- [x] Add branch protection requiring CI after workflow names stabilize.

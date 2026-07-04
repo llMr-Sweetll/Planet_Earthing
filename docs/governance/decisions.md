@@ -42,6 +42,20 @@ Status:
 
 Accepted.
 
+## 2026-07-04: Require CI For Main Branch Protection
+
+Decision:
+
+Protect `main` with required CI status checks for the Python 3.10, 3.11, and 3.12 matrix jobs.
+
+Rationale:
+
+The project now has executable schedule, synthetic data, feature extraction, and repository-validation logic. Main branch changes should preserve that runnable baseline.
+
+Status:
+
+Accepted.
+
 ## 2026-07-04: Publish As Public Open-Source Repo
 
 Decision:
