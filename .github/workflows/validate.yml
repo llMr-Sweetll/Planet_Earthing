@@ -35,9 +35,12 @@ jobs:
           from pathlib import Path
 
           failures = []
-          ignored = {".git"}
+          ignored_dirs = {".git", "__pycache__"}
+          ignored_suffixes = {".pyc"}
           for path in Path(".").rglob("*"):
-              if any(part in ignored for part in path.parts) or not path.is_file():
+              if any(part in ignored_dirs for part in path.parts) or not path.is_file():
+                  continue
+              if path.suffix in ignored_suffixes:
                   continue
               data = path.read_bytes()
               try:
@@ -51,4 +54,3 @@ jobs:
                   print(f"  {failure}")
               raise SystemExit(1)
           PY
-
