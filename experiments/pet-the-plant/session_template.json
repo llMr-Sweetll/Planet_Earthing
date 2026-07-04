@@ -1,0 +1,27 @@
+{
+  "session_id": "S0001",
+  "cohort_id": "C01",
+  "plant_id": "P001",
+  "condition_code": "HOST_TOUCH_VOICE",
+  "blind_label": "B001",
+  "scheduled_start_iso": "2026-07-04T09:00:00+05:30",
+  "actual_start_iso": "2026-07-04T09:00:00+05:30",
+  "operator_id": "OP001",
+  "participant_id": "H001",
+  "protocol_version": "0.1.0",
+  "randomization_block": "W01-B01",
+  "pressure_glove_file": "pressure.csv",
+  "electrical_file": "electrical.csv",
+  "vibration_file": "vibration.csv",
+  "microclimate_file": "microclimate.csv",
+  "audio_video_file": "video.mp4",
+  "soil_moisture_pre": null,
+  "soil_moisture_post": null,
+  "watered_within_24h": false,
+  "electrode_impedance_pre": null,
+  "electrode_impedance_post": null,
+  "quality_flag": "PASS",
+  "failure_reason": "",
+  "notes": ""
+}
+

@@ -1,0 +1,26 @@
+.DS_Store
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Keep data directories visible, but do not commit participant media or raw streams.
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Local analysis artifacts.
+outputs/*
+!outputs/.gitkeep
+*.parquet
+*.feather
+*.h5
+*.mp4
+*.mov
+*.wav
+*.flac
+

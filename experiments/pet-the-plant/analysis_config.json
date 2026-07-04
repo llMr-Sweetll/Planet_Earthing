@@ -1,0 +1,53 @@
+{
+  "protocol_version": "0.1.0",
+  "windows": {
+    "baseline": {
+      "start_s": -300,
+      "end_s": 0
+    },
+    "interaction": {
+      "start_s": 0,
+      "end_s": 60
+    },
+    "early_recovery": {
+      "start_s": 60,
+      "end_s": 300
+    },
+    "late_recovery": {
+      "start_s": 300,
+      "end_s": 900
+    }
+  },
+  "primary_contrast": [
+    "HOST_TOUCH_VOICE",
+    "NOVEL_STRANGER_TOUCH_VOICE"
+  ],
+  "secondary_contrasts": [
+    [
+      "HOST_TOUCH_VOICE",
+      "REPEATED_NONHOST_TOUCH_VOICE"
+    ],
+    [
+      "NOVEL_STRANGER_TOUCH_VOICE",
+      "OBJECT_TOUCH"
+    ],
+    [
+      "HOST_TOUCH_VOICE",
+      "VOICE_PLAYBACK_ONLY"
+    ]
+  ],
+  "multiplicity": {
+    "primary": "bonferroni",
+    "exploratory": "fdr"
+  },
+  "ml_validation": {
+    "split_strategy": "grouped_holdout",
+    "group_keys": [
+      "plant_id",
+      "participant_id",
+      "date_block"
+    ],
+    "permutation_tests": 1000
+  }
+}
+
