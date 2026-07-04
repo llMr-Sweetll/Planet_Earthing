@@ -1,6 +1,6 @@
 # Pet The Plant
 
-Pet the Plant is the first PlanetEarthing experiment. It tests whether a plant's physiological signals differ during standardized interaction with a familiar host versus unfamiliar humans.
+Pet the Plant is the first Planet_Earthing experiment. It tests whether a plant's physiological signals differ during standardized interaction with a familiar host versus unfamiliar humans.
 
 ## One-Sentence Version
 
@@ -25,4 +25,3 @@ Can familiar-host sessions be distinguished from novel-stranger sessions using p
 - [ ] Randomization plan generated.
 - [ ] Preregistration frozen.
 - [ ] Analysis code smoke-tested on dummy data.
-

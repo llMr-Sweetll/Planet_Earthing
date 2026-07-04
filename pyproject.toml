@@ -5,14 +5,19 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "planetearthing"
 version = "0.1.0"
-description = "Living research helpers for the PlanetEarthing Pet the Plant experiment."
+description = "Living research helpers for the Planet_Earthing Pet the Plant experiment."
 requires-python = ">=3.10"
-authors = [{ name = "PlanetEarthing contributors" }]
+authors = [{ name = "Planet_Earthing contributors" }]
+license = { text = "MIT" }
 dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/llMr-Sweetll/Planet_Earthing"
+Repository = "https://github.com/llMr-Sweetll/Planet_Earthing"
+Issues = "https://github.com/llMr-Sweetll/Planet_Earthing/issues"
 
 [project.scripts]
 planetearthing = "planetearthing.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
-

@@ -1,14 +1,28 @@
 # Decision Log
 
-## 2026-07-04: Initialize PlanetEarthing Repo
+## 2026-07-04: Initialize Planet_Earthing Repo
 
 Decision:
 
-Create a local git repo named `PlanetEarthing` with Pet the Plant as the first experiment.
+Create a local git repo with Pet the Plant as the first experiment.
 
 Rationale:
 
 The project needs a stable place for evidence, protocol versions, data schemas, code, and claim discipline.
+
+Status:
+
+Accepted.
+
+## 2026-07-04: Publish As Public Open-Source Repo
+
+Decision:
+
+Publish the project on GitHub as `Planet_Earthing` under the MIT License.
+
+Rationale:
+
+The project benefits from public scrutiny, replication, and contributions. MIT keeps reuse simple while the data management plan protects human participant data through separate consent-aware release rules.
 
 Status:
 
@@ -41,4 +55,3 @@ A single specimen cannot separate condition effects from plant-specific drift, s
 Status:
 
 Accepted.
-

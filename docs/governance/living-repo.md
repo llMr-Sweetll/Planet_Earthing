@@ -1,6 +1,6 @@
 # Living Repo Practice
 
-PlanetEarthing should change as evidence improves. The point of a living repo is not to keep moving the goalposts; it is to keep decisions visible.
+Planet_Earthing should change as evidence improves. The point of a living repo is not to keep moving the goalposts; it is to keep decisions visible.
 
 ## Versioned Artifacts
 
@@ -50,4 +50,3 @@ After preregistration freeze:
 - separate planned analyses from exploratory analyses,
 - record deviations,
 - never rewrite the original protocol as if it had always said the new thing.
-

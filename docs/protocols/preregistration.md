@@ -3,7 +3,7 @@
 Version: 0.1.0  
 Status: draft, not frozen  
 Study: Pet the Plant  
-Parent project: PlanetEarthing  
+Parent project: Planet_Earthing  
 Created: 2026-07-04
 
 ## Research Question
@@ -136,4 +136,3 @@ The phrase "plant recognition of familiar humans" may not be used in public resu
 4. alternative explanations are discussed plainly.
 
 Until then, use "familiarity-associated signal difference."
-

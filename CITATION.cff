@@ -1,10 +1,9 @@
 cff-version: 1.2.0
-message: "If you use PlanetEarthing materials, cite the repository and the specific commit."
-title: "PlanetEarthing: Pet the Plant experiment design repository"
+message: "If you use Planet_Earthing materials, cite the repository and the specific commit."
+title: "Planet_Earthing: Pet the Plant experiment design repository"
 type: software
 authors:
-  - name: "PlanetEarthing contributors"
+  - name: "Planet_Earthing contributors"
 date-released: "2026-07-04"
-repository-code: "local-only"
+repository-code: "https://github.com/llMr-Sweetll/Planet_Earthing"
 abstract: "A living research repository for skeptical, sensor-rich human-plant interaction experiments."
-
